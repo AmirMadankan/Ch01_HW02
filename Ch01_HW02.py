@@ -37,4 +37,3 @@ plt.title("fameli from 2007 to 2022")
 plt.xlabel("day")
 plt.ylabel("price")
 plt.show()
-
