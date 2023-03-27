@@ -18,6 +18,11 @@ for i in range(m-1):
 
 yprime = dy
 
+sets = []
+for i in range(m-9):
+    sets.append(values_close[i:i+10])
+
+
 plt.plot(values_close, label="chart")
 plt.plot(yprime,label="dervative")
 plt.legend()
@@ -25,3 +30,4 @@ plt.title("fameli from 2007 to 2022")
 plt.xlabel("day")
 plt.ylabel("price")
 plt.show()
+
