@@ -22,6 +22,13 @@ sets = []
 for i in range(m-9):
     sets.append(values_close[i:i+10])
 
+L = len(sets)
+sets_predict = []
+for i in range(L-1):
+    if sets[i+1][9] > sets[i][9]:
+        sets_predict.append(True)
+    else:
+        sets_predict.append(False)
 
 plt.plot(values_close, label="chart")
 plt.plot(yprime,label="dervative")
